@@ -1,0 +1,5 @@
+#Impedir que se puedan ver los directorios
+Options All -Indexes
+#URL's personalizadas
+RewriteEngine on
+RewriteRule ^([a-zA-Z0-9/_]+)$ index.php?action=$1
